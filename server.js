@@ -6,12 +6,11 @@ const fs = require('fs');   //Used to store & retrieve notes
 
 const app = express(); //Invoke express variable & call it app 
 
-// const PORT = 3001;
-
 const PORT = process.env.PORT || 3001;
 
 const util = require('util');
 
+//Need to get the delete button to work 
 const { v4: uuidv4 } = require('uuid');
 
 const readFile = util.promisify(fs.readFile);
@@ -42,6 +41,14 @@ res.sendFile(path.join(__dirname, 'public/notes.html'))
 app.get('/api/notes', (req, res)=>{
     getNotes().then(notes => res.json(notes))
 })
+
+// app.delete('/api/notes/:id', (req, res) => {
+
+// })
+// DELETE /api/notes/:id should receive a query parameter containing the id of a note to delete.
+// In order to delete a note, you'll need to read all notes from the db.json file, 
+// remove the note with the given id property, and then rewrite the notes to the db.json file.
+
 
 app.post('/api/notes',(req, res)=>{
     getNotes().then(oldnotes =>{
