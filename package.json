@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/christian1512-FE/DevCM-Ex-23#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "uuid": "^9.0.0"
   }
 }
