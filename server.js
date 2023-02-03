@@ -6,7 +6,7 @@ const fs = require('fs');   //Used to store & retrieve notes
 
 const app = express(); //Invoke express variable & call it app 
 
-const PORT = 3001;
+const PORT = 3000;
 
 const util = require('util');
 
