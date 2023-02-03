@@ -20,7 +20,7 @@ challenge 11
   https://devcm-ex-23.herokuapp.com/
 
   The user is can write notes and save them. 
-  ![screenshot](../DevCM-Ex-23/Images/Screenshot%202023-02-03%20at%202.45.43%20PM.png)
+  ![screenshot](../DevCM-Ex-23/Images/Screenshot%202023-02-03%20at%202.45.43%20PM.jpg)
 
   
   ## License
